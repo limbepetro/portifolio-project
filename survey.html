@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey Form by "Petro Limbe" />
+  <meta name="keywords" content="survey, feedback, form" />
+  <meta name="author" content="Petro Limbe" />
+  <title>Survey | "Petro Limbe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <button id="theme-toggle">Toggle Theme</button>
+</head>
+<body>
+  <header>
+    <h1>Feedback Survey</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="survey.html">Survey</a>
+  </nav>
+
+  <section class="form-section">
+    <form id="surveyForm" onsubmit="return validateSurveyForm()">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <p>How did you hear about me?</p>
+      <label><input type="radio" name="source" value="Google" required /> Google</label>
+      <label><input type="radio" name="source" value="Friend" /> Friend</label>
+      <label><input type="radio" name="source" value="Social Media" /> Social Media</label>
+
+      <p>What are you interested in?</p>
+      <label><input type="checkbox" name="interests" value="Web Development" /> Web Development</label>
+      <label><input type="checkbox" name="interests" value="UI/UX Design" /> UI/UX Design</label>
+      <label><input type="checkbox" name="interests" value="Mobile Apps" /> Mobile Apps</label>
+
+      <label for="feedback">Additional Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5"></textarea>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Petro Limbe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
